@@ -1,0 +1,7 @@
+﻿services:
+  front_gestionnaire_password:
+    image: front_gestionnaire_password
+    build:
+      context: .
+      dockerfile: front_gestionnaire_password/Dockerfile
+

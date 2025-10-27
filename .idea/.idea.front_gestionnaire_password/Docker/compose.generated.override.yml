@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  front_gestionnaire_password:
+    build:
+      context: "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password"
+      dockerfile: "front_gestionnaire_password/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/front_gestionnaire_password.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_STATICWEBASSETS: "/app/bin/Debug/net8.0/front_gestionnaire_password.staticwebassets.runtime.CT.json"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "front_gestionnaire_password:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password:/app:rw"
+    - "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password:/src:rw"
+    - "C:\\Users\\flore\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"

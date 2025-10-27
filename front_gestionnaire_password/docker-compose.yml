@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  blazorserver:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: blazorserver-dev
+    ports:
+      - "8080:8080"
+    volumes:
+      # Monte tout le dossier du projet dans le conteneur
+      - ./front_gestionnaire_password:/src/front_gestionnaire_password
+      # Permet de garder le cache NuGet sur la machine locale (plus rapide)
+      - ~/.nuget/packages:/root/.nuget/packages:ro
+    working_dir: /src/front_gestionnaire_password
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Developmentonnaire_password
