@@ -1,0 +1,15 @@
+# Dockerfile.dev pour Hot Reload Blazor Server
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS dev
+
+# Dossier de travail dans le conteneur
+WORKDIR /src
+
+# Expose le port du serveur Blazor
+EXPOSE 8080
+
+# Copie uniquement le fichier de projet pour le restore initial
+COPY front_gestionnaire_password.csproj ./
+RUN dotnet restore front_gestionnaire_password.csproj
+
+# Commande par défaut : lancement en mode watch (Hot Reload)
+CMD ["dotnet", "watch", "run", "--project", "front_gestionnaire_password.csproj", "--urls", "http://0.0.0.0:8080"]
