@@ -2536,19 +2536,19 @@
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "C:\\Users\\flore\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/src/front_gestionnaire_password.csproj",
+      "projectUniqueName": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\front_gestionnaire_password.csproj",
       "projectName": "front_gestionnaire_password",
-      "projectPath": "/src/front_gestionnaire_password.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/src/obj/",
+      "projectPath": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\front_gestionnaire_password.csproj",
+      "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\flore\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2613,7 +2613,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\flore\\.dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
