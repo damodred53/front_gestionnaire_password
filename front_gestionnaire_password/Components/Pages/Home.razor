@@ -1,8 +1,28 @@
 ﻿@page "/"
+@using System.Security.Claims
 @using Microsoft.AspNetCore.Authorization
-@*@attribute [Authorize]*@
+@using Microsoft.AspNetCore.Components.Authorization
+@attribute [Authorize]
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
 <PageTitle>Accueil</PageTitle>
 
 <h1>Bienvenue sur mot de : Peep !</h1>
 
+@if (_user != null)
+{
+    <p>Vous êtes connecté en tant que : <b>@_user.Identity?.Name</b></p>
+}
+
+
+
+@code {
+    private ClaimsPrincipal? _user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        _user = authState.User;
+    }
+}
