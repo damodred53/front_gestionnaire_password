@@ -9,14 +9,6 @@
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/src/wwwroot/bootstrap/bootstrap.min.css",
-      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css"
-    },
-    {
-      "Id": "/src/wwwroot/bootstrap/bootstrap.min.css.map",
-      "PackagePath": "staticwebassets/bootstrap/bootstrap.min.css.map"
-    },
-    {
       "Id": "/src/wwwroot/favicon.png",
       "PackagePath": "staticwebassets/favicon.png"
     },

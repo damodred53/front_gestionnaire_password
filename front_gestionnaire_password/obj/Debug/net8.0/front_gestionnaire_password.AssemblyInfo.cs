@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("front_gestionnaire_password")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+021c6db21c938886c1b1dd54a4c78678dd130c7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("front_gestionnaire_password")]
 [assembly: System.Reflection.AssemblyTitleAttribute("front_gestionnaire_password")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
