@@ -21,7 +21,7 @@ builder.Services.AddAuthorization(options =>
 // --- Blazor Components ---
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
-    .AddMicrosoftIdentityConsentHandler(); // Important pour gérer les consentements
+    .AddMicrosoftIdentityConsentHandler(); 
 
 var app = builder.Build();
 
