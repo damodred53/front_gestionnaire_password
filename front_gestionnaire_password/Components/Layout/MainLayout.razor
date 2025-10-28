@@ -1,21 +1,42 @@
 ﻿@inherits LayoutComponentBase
 
+
 <div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
+
+    <header class="banner test">
+        <div class="banner-content px-4">
+            <h1>Bienvenue sur note site d'hébergement de mot de passe : Pepepepepe</h1>
+            <nav>
+                <a href="/">Accueil</a>
+                <a href="/about">À propos</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </div>
+        <div class="banner-lines">
+            <span class="line orange"></span>
+            <span class="line pink"></span>
+        </div>
+    </header>
 
     <main>
-        
-
         <article class="content px-4">
             @Body
         </article>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content px-4">
+            <p>&copy; 2025 Pepepepe. Projet réalisé par Corentin, Kilian et Florent</p>
+        </div>
+        <div class="footer-lines">
+            <span class="line orange"></span>
+            <span class="line pink"></span>
+        </div>
+    </footer>
 </div>
 
 <div id="blazor-error-ui">
-    An unhandled error h
+    An unhandled error has occurred.
     <a href="" class="reload">Reload</a>
     <a class="dismiss">🗙</a>
 </div>
