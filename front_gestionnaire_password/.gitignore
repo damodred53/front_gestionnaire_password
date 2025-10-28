@@ -1,0 +1,27 @@
+# Fichiers bin et obj générés par .NET
+**/bin/
+**/obj/
+
+# Fichiers de configuration locaux contenant des secrets
+**/appsettings.json
+**/appsettings.*.json
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+*.vspscc
+
+# JetBrains Rider
+.idea/
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Packages NuGet
+*.nupkg
+packages/
+.nuget/
