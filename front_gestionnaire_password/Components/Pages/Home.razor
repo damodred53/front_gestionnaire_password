@@ -1,10 +1,12 @@
-﻿@page "/"
-@using System.Security.Claims
-@using Microsoft.AspNetCore.Authorization
-@using Microsoft.AspNetCore.Components.Authorization
-@attribute [Authorize]
+@page "/"
 
-@inject AuthenticationStateProvider AuthenticationStateProvider
+@using front_gestionnaire_password.Components.HomeComponents
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Identity.Abstractions
+
+@attribute [Authorize]
+@inject IDownstreamApi DownstreamApi;
+
 
 <PageTitle>Accueil</PageTitle>
 
@@ -13,16 +15,38 @@
 @if (_user != null)
 {
     <p>Vous êtes connecté en tant que : <b>@_user.Identity?.Name</b></p>
+
+    <ul>
+        @foreach (var claim in _user.Claims)
+        {
+            <li>@claim.Type : @claim.Value</li>
+        }
+    </ul>
 }
 
+<DropDown/>
 
 
 @code {
-    private ClaimsPrincipal? _user;
 
-    protected override async Task OnInitializedAsync()
+    private Vault[] vaults = [];
+
+    /*protected override async Task OnInitializedAsync()
     {
-        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
-        _user = authState.User;
-    }
+        try
+        {
+            vaults = await DownstreamApi.CallApiForUserAsync<Vault[]>("EntraIDAuthWebAPI", options =>
+            {
+                options.HttpMethod = "GET";
+                options.RelativePath = "RegisterUser";
+            }) ?? [];
+        }
+        catch (Exception)
+        {
+            
+        }
+        
+    }*/
 }
+
+

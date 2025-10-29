@@ -1,0 +1,65 @@
+
+/* === Banner === */
+.banner {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+    overflow: hidden;
+    border-bottom: 2px solid #222;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.banner-content h1 {
+    margin: 0.5rem 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Lignes horizontales */
+.banner-lines {
+    display: flex;
+    height: 6px;
+}
+
+.banner-lines .line {
+    flex: 1;
+}
+
+.banner-lines .orange {
+    background: linear-gradient(to right, orange, #ffb84d);
+}
+
+.banner-lines .pink {
+    background: linear-gradient(to right, pink, #ff66b2);
+}
+
+
+
+/* Lignes verticales */
+.banner::before,
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, orange, pink);
+    opacity: 0.6;
+}
+
+.banner::before {
+    left: 2%;
+}
+
+.banner::after {
+    right: 2%;
+}
+

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UPrJQ97bGTTrFAlm5LiljuTi/5MmTb/IlCV9ZU+V7iM=",
+  "Hash": "FdKpaXtYPvvduGABVkEKjVMmxhO25y22mB1CExcdsRQ=",
   "Source": "front_gestionnaire_password",
   "BasePath": "_content/front_gestionnaire_password",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "front_gestionnaire_password/wwwroot",
+      "Name": "front_gestionnaire_password\\wwwroot",
       "Source": "front_gestionnaire_password",
-      "ContentRoot": "/src/wwwroot/",
+      "ContentRoot": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\",
       "BasePath": "_content/front_gestionnaire_password",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/src/obj/Debug/net8.0/scopedcss/bundle/front_gestionnaire_password.styles.css",
+      "Identity": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\bundle\\front_gestionnaire_password.styles.css",
       "SourceId": "front_gestionnaire_password",
       "SourceType": "Computed",
-      "ContentRoot": "/src/obj/Debug/net8.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/front_gestionnaire_password",
       "RelativePath": "front_gestionnaire_password.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/src/obj/Debug/net8.0/scopedcss/bundle/front_gestionnaire_password.styles.css"
+      "OriginalItemSpec": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\bundle\\front_gestionnaire_password.styles.css"
     },
     {
-      "Identity": "/src/obj/Debug/net8.0/scopedcss/projectbundle/front_gestionnaire_password.bundle.scp.css",
+      "Identity": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\front_gestionnaire_password.bundle.scp.css",
       "SourceId": "front_gestionnaire_password",
       "SourceType": "Computed",
-      "ContentRoot": "/src/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/front_gestionnaire_password",
       "RelativePath": "front_gestionnaire_password.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/src/obj/Debug/net8.0/scopedcss/projectbundle/front_gestionnaire_password.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\front_gestionnaire_password.bundle.scp.css"
     },
     {
-      "Identity": "/src/wwwroot/app.css",
+      "Identity": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\app.css",
       "SourceId": "front_gestionnaire_password",
       "SourceType": "Discovered",
-      "ContentRoot": "/src/wwwroot/",
+      "ContentRoot": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\",
       "BasePath": "_content/front_gestionnaire_password",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/app.css"
+      "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "/src/wwwroot/favicon.png",
+      "Identity": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\favicon.png",
       "SourceId": "front_gestionnaire_password",
       "SourceType": "Discovered",
-      "ContentRoot": "/src/wwwroot/",
+      "ContentRoot": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\",
       "BasePath": "_content/front_gestionnaire_password",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.png"
     }
   ]
 }

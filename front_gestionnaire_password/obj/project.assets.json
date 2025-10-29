@@ -85,26 +85,6 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.AzureAD.UI/7.0.0-preview.6.22330.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.0-preview.6.22330.3",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "7.0.0-preview.6.22330.3"
-        },
-        "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.0": {
         "type": "package",
         "dependencies": {
@@ -124,10 +104,10 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.21": {
+      "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.1.2"
+          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "7.0.3"
         },
         "compile": {
           "lib/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
@@ -603,6 +583,23 @@
           }
         }
       },
+      "Microsoft.Identity.Web.DownstreamApi/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+          "Microsoft.Identity.Web.TokenAcquisition": "4.0.1"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Identity.Web.DownstreamApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Identity.Web.DownstreamApi.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Identity.Web.TokenAcquisition/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -651,25 +648,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Microsoft.Identity.Web.UI/4.0.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Identity.Web": "4.0.1"
-        },
-        "compile": {
-          "lib/net8.0/Microsoft.Identity.Web.UI.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Microsoft.Identity.Web.UI.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "Microsoft.IdentityModel.Abstractions/8.14.0": {
         "type": "package",
@@ -1077,21 +1055,6 @@
         "lib/netstandard2.0/Azure.Security.KeyVault.Secrets.xml"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.AzureAD.UI/7.0.0-preview.6.22330.3": {
-      "sha512": "BqCNN8jiblJNgl5WZKCM44RaFvGZ6CmNmzuYgmR+a3JTYawCr8F/HY5/NIn1J6zTo+71yRZttvCUU8KE81CuZw==",
-      "type": "package",
-      "path": "microsoft.aspnetcore.authentication.azuread.ui/7.0.0-preview.6.22330.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net7.0/Microsoft.AspNetCore.Authentication.AzureAD.UI.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Authentication.AzureAD.UI.xml",
-        "microsoft.aspnetcore.authentication.azuread.ui.7.0.0-preview.6.22330.3.nupkg.sha512",
-        "microsoft.aspnetcore.authentication.azuread.ui.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.0": {
       "sha512": "rwxaZYHips5M9vqxRkGfJthTx+Ws4O4yCuefn17J371jL3ouC5Ker43h2hXb5yd9BMnImE9rznT75KJHm6bMgg==",
       "type": "package",
@@ -1107,10 +1070,10 @@
         "microsoft.aspnetcore.authentication.jwtbearer.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.21": {
-      "sha512": "ERZJZSO5CcZ3MQD2hShqTGIhLFxXvijvqRbh6I6acLM9VS09EXEie3hv1oLWXimFWj/gahv+g41ZkG70QlVPGA==",
+    "Microsoft.AspNetCore.Authentication.OpenIdConnect/8.0.0": {
+      "sha512": "vBAcj4GpCpvJXIXFnYXDVF0yQtsRAaGib+DiMc79KZNyb/TKhxpoHQwOP7v3aMAoIqUC0HUbf1RQJUoOygakbQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authentication.openidconnect/8.0.21",
+      "path": "microsoft.aspnetcore.authentication.openidconnect/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1118,7 +1081,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll",
         "lib/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.xml",
-        "microsoft.aspnetcore.authentication.openidconnect.8.0.21.nupkg.sha512",
+        "microsoft.aspnetcore.authentication.openidconnect.8.0.0.nupkg.sha512",
         "microsoft.aspnetcore.authentication.openidconnect.nuspec"
       ]
     },
@@ -1847,6 +1810,29 @@
         "microsoft.identity.web.diagnostics.nuspec"
       ]
     },
+    "Microsoft.Identity.Web.DownstreamApi/4.0.1": {
+      "sha512": "f8xdf/GjbOVDL9hR1lZKF7Vp6g3fYXz8ZypHiy1J0gfQqP438Smz/HxecL0lRAb/tva3+CUTifZMPzH7woAvgA==",
+      "type": "package",
+      "path": "microsoft.identity.web.downstreamapi/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net462/Microsoft.Identity.Web.DownstreamApi.dll",
+        "lib/net462/Microsoft.Identity.Web.DownstreamApi.xml",
+        "lib/net472/Microsoft.Identity.Web.DownstreamApi.dll",
+        "lib/net472/Microsoft.Identity.Web.DownstreamApi.xml",
+        "lib/net8.0/Microsoft.Identity.Web.DownstreamApi.dll",
+        "lib/net8.0/Microsoft.Identity.Web.DownstreamApi.xml",
+        "lib/net9.0/Microsoft.Identity.Web.DownstreamApi.dll",
+        "lib/net9.0/Microsoft.Identity.Web.DownstreamApi.xml",
+        "lib/netstandard2.0/Microsoft.Identity.Web.DownstreamApi.dll",
+        "lib/netstandard2.0/Microsoft.Identity.Web.DownstreamApi.xml",
+        "microsoft.identity.web.downstreamapi.4.0.1.nupkg.sha512",
+        "microsoft.identity.web.downstreamapi.nuspec"
+      ]
+    },
     "Microsoft.Identity.Web.TokenAcquisition/4.0.1": {
       "sha512": "5Z9EIdBrRzA5fAkPlblo/ZwuPI7PBZazBkuT8atbTtva/oDSWuDijznx0qD5V6RVdgpFKidPep41rvSBy5eRaw==",
       "type": "package",
@@ -1891,23 +1877,6 @@
         "lib/netstandard2.0/Microsoft.Identity.Web.TokenCache.xml",
         "microsoft.identity.web.tokencache.4.0.1.nupkg.sha512",
         "microsoft.identity.web.tokencache.nuspec"
-      ]
-    },
-    "Microsoft.Identity.Web.UI/4.0.1": {
-      "sha512": "UrhcklS7Ict4pud9UvnNaOqhM6bymxBFVE15zU+doAOgWztRtT14q/PAsFU2sGGO23juBtmf44CkJ235oaMf6g==",
-      "type": "package",
-      "path": "microsoft.identity.web.ui/4.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "lib/net8.0/Microsoft.Identity.Web.UI.dll",
-        "lib/net8.0/Microsoft.Identity.Web.UI.xml",
-        "lib/net9.0/Microsoft.Identity.Web.UI.dll",
-        "lib/net9.0/Microsoft.Identity.Web.UI.xml",
-        "microsoft.identity.web.ui.4.0.1.nupkg.sha512",
-        "microsoft.identity.web.ui.nuspec"
       ]
     },
     "Microsoft.IdentityModel.Abstractions/8.14.0": {
@@ -2529,26 +2498,24 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Microsoft.AspNetCore.Authentication.AzureAD.UI >= 7.0.0-preview.6.22330.3",
-      "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 8.0.21",
       "Microsoft.Identity.Web >= 4.0.1",
-      "Microsoft.Identity.Web.UI >= 4.0.1"
+      "Microsoft.Identity.Web.DownstreamApi >= 4.0.1"
     ]
   },
   "packageFolders": {
-    "/root/.nuget/packages/": {}
+    "C:\\Users\\flore\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/src/front_gestionnaire_password.csproj",
+      "projectUniqueName": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\front_gestionnaire_password.csproj",
       "projectName": "front_gestionnaire_password",
-      "projectPath": "/src/front_gestionnaire_password.csproj",
-      "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/src/obj/",
+      "projectPath": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\front_gestionnaire_password.csproj",
+      "packagesPath": "C:\\Users\\flore\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/root/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\flore\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2577,19 +2544,11 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Authentication.AzureAD.UI": {
-            "target": "Package",
-            "version": "[7.0.0-preview.6.22330.3, )"
-          },
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
-            "target": "Package",
-            "version": "[8.0.21, )"
-          },
           "Microsoft.Identity.Web": {
             "target": "Package",
             "version": "[4.0.1, )"
           },
-          "Microsoft.Identity.Web.UI": {
+          "Microsoft.Identity.Web.DownstreamApi": {
             "target": "Package",
             "version": "[4.0.1, )"
           }
@@ -2613,7 +2572,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.413/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\flore\\.dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

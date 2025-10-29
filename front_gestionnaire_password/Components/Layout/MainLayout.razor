@@ -1,22 +1,11 @@
-﻿@inherits LayoutComponentBase
+﻿@using front_gestionnaire_password.Components.Banner
+@using front_gestionnaire_password.Components.Footer
+@inherits LayoutComponentBase
 
 
 <div class="page">
 
-    <header class="banner test">
-        <div class="banner-content px-4">
-            <h1>Bienvenue sur note site d'hébergement de mot de passe : Pepepepepe</h1>
-            <nav>
-                <a href="/">Accueil</a>
-                <a href="/about">À propos</a>
-                <a href="/contact">Contact</a>
-            </nav>
-        </div>
-        <div class="banner-lines">
-            <span class="line orange"></span>
-            <span class="line pink"></span>
-        </div>
-    </header>
+    <Banner />
 
     <main>
         <article class="content px-4">
@@ -24,15 +13,8 @@
         </article>
     </main>
 
-    <footer class="footer">
-        <div class="footer-content px-4">
-            <p>&copy; 2025 Pepepepe. Projet réalisé par Corentin, Kilian et Florent</p>
-        </div>
-        <div class="footer-lines">
-            <span class="line orange"></span>
-            <span class="line pink"></span>
-        </div>
-    </footer>
+    <Footer />
+    
 </div>
 
 <div id="blazor-error-ui">

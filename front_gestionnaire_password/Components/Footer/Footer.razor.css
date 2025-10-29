@@ -1,0 +1,54 @@
+/* === Footer === */
+.footer {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 0;
+    overflow: hidden;
+    border-top: 2px solid #222;
+}
+
+.footer-content p {
+    margin: 0;
+    text-align: center;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+/* Lignes horizontales décoratives */
+.footer-lines {
+    display: flex;
+    height: 6px;
+}
+
+.footer-lines .line {
+    flex: 1;
+}
+
+.footer-lines .orange {
+    background: linear-gradient(to right, orange, #ffb84d);
+}
+
+.footer-lines .pink {
+    background: linear-gradient(to right, pink, #ff66b2);
+}
+
+/* Lignes verticales décoratives */
+.footer::before,
+.footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, orange, pink);
+    opacity: 0.6;
+}
+
+.footer::before {
+    left: 2%;
+}
+
+.footer::after {
+    right: 2%;
+}

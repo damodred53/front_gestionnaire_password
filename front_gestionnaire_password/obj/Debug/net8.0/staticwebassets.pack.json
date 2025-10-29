@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "/src/obj/Debug/net8.0/scopedcss/projectbundle/front_gestionnaire_password.bundle.scp.css",
-      "PackagePath": "staticwebassets/front_gestionnaire_password.bundle.scp.css"
+      "Id": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\front_gestionnaire_password.bundle.scp.css",
+      "PackagePath": "staticwebassets\\front_gestionnaire_password.bundle.scp.css"
     },
     {
-      "Id": "/src/wwwroot/app.css",
-      "PackagePath": "staticwebassets/app.css"
+      "Id": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "/src/wwwroot/favicon.png",
-      "PackagePath": "staticwebassets/favicon.png"
+      "Id": "C:\\Users\\flore\\RiderProjects\\front_gestionnaire_password\\front_gestionnaire_password\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.front_gestionnaire_password.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.front_gestionnaire_password.props",
       "PackagePath": "build\\front_gestionnaire_password.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.front_gestionnaire_password.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.front_gestionnaire_password.props",
       "PackagePath": "buildMultiTargeting\\front_gestionnaire_password.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.front_gestionnaire_password.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.front_gestionnaire_password.props",
       "PackagePath": "buildTransitive\\front_gestionnaire_password.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.front_gestionnaire_password.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.front_gestionnaire_password.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     }
   ],

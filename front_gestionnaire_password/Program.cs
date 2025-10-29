@@ -4,24 +4,34 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Identity.Web;
 using front_gestionnaire_password.Components;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
-// --- 🔐 Authentification Microsoft Entra ID ---
-builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-    .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"))
-    .EnableTokenAcquisitionToCallDownstreamApi()
-    .AddInMemoryTokenCaches();
+string apiEndpoint = builder.Configuration.GetValue<string>("WebAPI:Endpoint") ?? throw new InvalidOperationException("WebAPI is not configured");
+string apiScope = builder.Configuration.GetValue<string>("WebAPI:Scope") ?? throw new InvalidOperationException("WebAPI is not configured");
 
-builder.Services.AddAuthorization(options =>
-{
-    // Tout utilisateur connecté a accès sauf si précisé
-    options.FallbackPolicy = options.DefaultPolicy;
-});
+builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
+    .AddMicrosoftIdentityWebApp(builder.Configuration, "AzureAd")
+        .EnableTokenAcquisitionToCallDownstreamApi([apiScope])
+            .AddDownstreamApi("EntraIDAuthWebAPI", options =>
+            {
+                options.BaseUrl = apiEndpoint;
+                options.Scopes = [apiScope];
+            })
+    .AddInMemoryTokenCaches();
+/*
+builder.Services.AddDownstreamApi(
+    "EntraIDAuthWebAPI",
+    builder.Configuration.GetSection("DownstreamApi")
+);
+*/
+
+builder.Services.AddAuthorization();
 
 // --- Blazor Components ---
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
-    .AddMicrosoftIdentityConsentHandler(); 
+    .AddMicrosoftIdentityConsentHandler();
 
 var app = builder.Build();
 
@@ -44,18 +54,7 @@ app.UseAntiforgery();
 
 // --- Blazor ---
 app.MapRazorComponents<App>()
+    .RequireAuthorization()
     .AddInteractiveServerRenderMode();
-
-/*app.MapPost("/logout", async context =>
-{
-    // Déconnexion côté application (cookie)
-    await context.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-
-    // Déconnexion côté Azure AD (OIDC)
-    await context.SignOutAsync(OpenIdConnectDefaults.AuthenticationScheme);
-
-    // Redirection après déconnexion
-    context.Response.Redirect("/");
-});*/
 
 app.Run();

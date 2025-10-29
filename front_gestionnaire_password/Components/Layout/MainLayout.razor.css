@@ -1,83 +1,19 @@
+
+html, body {
+    height: 100%; 
+    margin: 0;    
+    padding: 0;  
+}
+
 .page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: #fff;
-    color: #000;
+    min-height: 100vh; 
 }
 
-
-
-/* Banner */
-.banner {
-    position: relative;
-    background-color: #000;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-.banner-content h1 {
-    margin: 0;
-    font-size: 2rem;
-    color: #fff;
-}
-
-.banner-content nav a {
-    margin-right: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.banner-lines {
-    display: flex;
-    height: 4px;
-}
-
-.banner-lines .line {
-    flex: 1;
-}
-
-.banner-lines .orange {
-    background: orange;
-}
-
-.banner-lines .pink {
-    background: pink;
-}
-
-/* Main content */
 main {
     flex: 1;
-    padding: 2rem 0;
-}
-
-/* Footer */
-.footer {
-    position: relative;
-    background-color: #000;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-.footer-content p {
-    margin: 0;
-    text-align: center;
-}
-
-.footer-lines {
-    display: flex;
-    height: 4px;
-}
-
-.footer-lines .line {
-    flex: 1;
-}
-
-.footer-lines .orange {
-    background: orange;
-}
-
-.footer-lines .pink {
-    background: pink;
+    padding: 3rem 0;
+    background-color: #fff;
+    color: #000;
 }
